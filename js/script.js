@@ -20,16 +20,25 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 const squareWrapper= document.createElement('div');
 squareWrapper.className = 'd-flex flex-wrap w-100 ';
 
-// squareWrapper.setAttribute('id','boxes');
-// console.dir(squareWrapper);
 
+// console.dir(squareWrapper);
+let frizz ='frizz';
+let buzz ='buzz';
 let numBox = 100;
 let tmpHtml = '';
 
-for(let i =1 ; i<=numBox ; i++){
+for(let i=1 ; i<=numBox ; i++){
+    if(i % 3 === 0){
+        i=frizz;
+    }else if(i % 5 === 0){
+        i=buzz;
+     }//else{
+    //     i=1;
+    // }
     tmpHtml +=  ` <div class="box"> ${i} </div>`;
     console.log(i);
 }
+
 
 squareWrapper.innerHTML = tmpHtml;
 console.dir(squareWrapper);
