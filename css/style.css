@@ -4,3 +4,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* general */
+body{
+    background-color: cornflowerblue;
+}
+.st-container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.box{
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    color: white;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
