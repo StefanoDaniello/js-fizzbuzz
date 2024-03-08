@@ -18,7 +18,7 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 
 
 const squareWrapper= document.createElement('div');
-squareWrapper.className = 'd-flex flex-wrap w-100 ';
+squareWrapper.className = 'd-flex flex-wrap w-100';
 
 
 // console.dir(squareWrapper);
@@ -29,19 +29,27 @@ let numBox = 100;
 let tmpHtml = '';
 
 for(let i=1 ; i<=numBox ; i++){
-    let numero = i;
+    let text= i;
 
     if(i % 3 === 0){
-       numero=frizz;
+       text=frizz;
+
     }else if(i % 5 === 0){
-        numero=buzz;
+        text=buzz;
     }else{
-        numero=frizzBuzz;
+        text=frizzBuzz;
     }
 
-    tmpHtml +=  ` <div class="box"> ${numero} </div>`;
+    // tmpHtml +=  ` <div class="box"> ${text} </div>`;
+    if(text === frizz){
+        tmpHtml +=  ` <div class="box bgblue"> ${text} </div>`;
+    }else if(text === buzz){
+        tmpHtml +=  ` <div class="box bgred"> ${text} </div>`;
+    }else{
+        tmpHtml +=  ` <div class="box bgyellow"> ${text} </div>`;
+    }
     console.log(i);
-    console.log(numero);
+    console.log(text);
 }
 
 
