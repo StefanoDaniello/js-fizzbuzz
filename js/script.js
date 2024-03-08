@@ -24,19 +24,24 @@ squareWrapper.className = 'd-flex flex-wrap w-100 ';
 // console.dir(squareWrapper);
 let frizz ='frizz';
 let buzz ='buzz';
+let frizzBuzz ='frizzbuzz';
 let numBox = 100;
 let tmpHtml = '';
 
 for(let i=1 ; i<=numBox ; i++){
+    let numero = i;
+
     if(i % 3 === 0){
-        i=frizz;
+       numero=frizz;
     }else if(i % 5 === 0){
-        i=buzz;
-     }//else{
-    //     i=1;
-    // }
-    tmpHtml +=  ` <div class="box"> ${i} </div>`;
+        numero=buzz;
+    }else{
+        numero=frizzBuzz;
+    }
+
+    tmpHtml +=  ` <div class="box"> ${numero} </div>`;
     console.log(i);
+    console.log(numero);
 }
 
 
