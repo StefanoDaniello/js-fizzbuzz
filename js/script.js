@@ -46,7 +46,7 @@ for(let i=1 ; i<=numBox ; i++){
     }else if(text === buzz){
         tmpHtml +=  ` <div class="box bgred"> ${text} </div>`;
     }else{
-        tmpHtml +=  ` <div class="box bgyellow"> ${text} </div>`;
+        tmpHtml +=  ` <div class="box bggreen"> ${text} </div>`;
     }
     console.log(i);
     console.log(text);
