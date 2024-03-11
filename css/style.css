@@ -23,6 +23,11 @@ body{
     align-items: center;
 }
 
+.box:hover{
+    opacity: 0.3;
+}
+
+
 /* bguyility  */
 .bgblue{
     background-color: blue;
@@ -32,4 +37,7 @@ body{
 }
 .bggreen{
     background-color: green;
+}
+.bgacqua{
+    background-color: aqua;
 }

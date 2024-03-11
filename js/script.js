@@ -31,22 +31,24 @@ let tmpHtml = '';
 for(let i=1 ; i<=numBox ; i++){
     let text= i;
 
-    if(i % 3 === 0){
-       text=frizz;
-
+    if(i % 3 === 0 && i % 5 == 0){
+    text=frizzBuzz;
+    }else if(i % 3 === 0){
+        text=frizz;
     }else if(i % 5 === 0){
         text=buzz;
     }else{
-        text=frizzBuzz;
+        text=i;
     }
 
-    // tmpHtml +=  ` <div class="box"> ${text} </div>`;
     if(text === frizz){
         tmpHtml +=  ` <div class="box bgblue"> ${text} </div>`;
     }else if(text === buzz){
         tmpHtml +=  ` <div class="box bgred"> ${text} </div>`;
-    }else{
+    }else if(text ===frizzBuzz){
         tmpHtml +=  ` <div class="box bggreen"> ${text} </div>`;
+    }else if(text ===i){
+        tmpHtml +=  ` <div class="box bgacqua"> ${text} </div>`;
     }
     console.log(i);
     console.log(text);
